@@ -14,7 +14,3 @@ except ValueError:
     print("Вы ввели не число!")
 except  Exception as e:
     print(f"Ошибка: {e}")
-
-
-
-
