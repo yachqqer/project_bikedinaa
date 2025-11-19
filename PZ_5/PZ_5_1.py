@@ -2,11 +2,13 @@
 # Линия проводится многократной печатью символа.
 # Заключить слово в рамку из полученных линий.
 
-def word_ramka(word: str):
-    for i in range(len(word)):
-        print('/' + '-' * len(word) + '\\')
-        print('|' + word + '|')
-        print('\\' + '-' * len(word) + '/')
+def main (a):
+    b = len(a)
+    c = "-"*b
+    return c
 
-word = input('Введите слово: ')
-word_ramka(word)
+a = input("Введите слово: ")
+
+print(f"{main(a) + "-" * 2} ")
+print(f"|{a}|")
+print(f"{main(a) + "-" * 2}")

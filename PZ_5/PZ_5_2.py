@@ -2,17 +2,12 @@
 # а также их сумму S (K -- входной, С и S - выходные параметры целого типа).
 # С помощью этой функции найти количество и сумму цифр для каждого из пяти данных целых чисел.
 
-def DigitCountSum(k: str) -> tuple[int, int]:
-    nums = [int(i) for i in k]
-    return len(nums), sum(nums)
+def DigitCountSum(K, C, S):
+    while K:
+        C += 1
+        S += K % 10
+        K //= 10
+    return C, S
 
-
-for i in range(5):
-
-    k = input(f'Введите {i+1} число: ')
-    if not k.isdigit():
-        print('Введите число')
-        exit()
-
-    c, s = DigitCountSum(k)
-    print(f'Количество цифр: {c}\nИх сумма: {s}\n')
+K = int(input("Введите число: "))
+print(DigitCountSum(K, 0, 0))
