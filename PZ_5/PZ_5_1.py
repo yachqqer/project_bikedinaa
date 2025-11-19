@@ -2,13 +2,18 @@
 # линия проводится многократной печатью символа.
 # Заключить слово в рамку из полученных линий.
 
-def main (a):
-    b = len(a)
-    c = "-"*b
-    return c
+try:
+    def main (a):
+        b = len(a)
+        c = "-"*b
+        return c
 
-a = input("Введите слово: ")
+    a = input("Введите слово: ")
 
-print(f"{main(a) + "-" * 2} ")
-print(f"|{a}|")
-print(f"{main(a) + "-" * 2}")
+    print(f"{main(a) + "-" * 2} ")
+    print(f"|{a}|")
+    print(f"{main(a) + "-" * 2}")
+except ValueError:
+    print("Вы ввели не число!")
+except  Exception as e:
+    print(f"Ошибка: {e}")
