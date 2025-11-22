@@ -3,13 +3,15 @@
 # = 1, F2 = 1, F = Fk-2 + Fk-1, K=3,4,....
 
 try:
-    N = int(input("Введите число \n"))
-    b = [1, 1]
-    #Создание оставшегося порядка фибоначчи
-    for i in range(2, 10):
-        a = b[i-2] + b[i-1]
-        b.append(a)
-    #Его вывод
-    print(b)
+    N = int(input("Введите число: "))
 except ValueError as e:
     print(e)
+    exit()
+
+b = [1, N]
+#Создание оставшегося порядка фибоначчи
+for i in range(2, 10):
+    a = b[i-2] + b[i-1]
+    b.append(a)
+#Его вывод
+print(b)
