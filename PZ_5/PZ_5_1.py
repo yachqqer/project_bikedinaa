@@ -3,17 +3,13 @@
 # Заключить слово в рамку из полученных линий.
 
 try:
-    def main (a):
-        b = len(a)
-        c = "-"*b
-        return c
+    def word_ramka(word: str):
+        print('/' + '-' * len(word) + '\\')
+        print('|' + word + '|')
+        print('\\' + '-' * len(word) + '/')
 
-    a = input("Введите слово: ")
 
-    print(f"{main(a) + "-" * 2} ")
-    print(f"|{a}|")
-    print(f"{main(a) + "-" * 2}")
-except ValueError:
-    print("Вы ввели не число!")
+    word = input('Введите слово: ')
+    word_ramka(word)
 except  Exception as e:
     print(f"Ошибка: {e}")
