@@ -25,7 +25,7 @@ for i in text:
     if i.isupper():
         if a > ord('Я'):
             a = ord('А') - 1 + (a - ord('Я'))
-    else:  # если маленькая
+    else:
         if a > ord('я'):
             a = ord('а') - 1 + (a - ord('я'))
 
