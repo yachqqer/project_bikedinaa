@@ -22,7 +22,7 @@ for i in text:
     a = ord(i)
     a += k
 
-    if i.isupper():  # если заглавная
+    if i.isupper():
         if a > ord('Я'):
             a = ord('А') - 1 + (a - ord('Я'))
     else:  # если маленькая
