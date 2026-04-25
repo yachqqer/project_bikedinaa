@@ -5,7 +5,7 @@
 # Исходные данные:
 # Количество элементов:
 # Сумма элементов:
-# Элементы, умноженные на минимальный элемент :
+# Элементы, умноженные на минимальный элемент:
 
 num = [0, 8, 4, 2, 5, -2, -5, -7]
 
@@ -15,11 +15,11 @@ for i in num:
 f2.close()
 
 ogo = []
-xuila = (len(num))
+dlina = (len(num))
 
 sum = 0
 min1 = min(num)
-fuck = 0
+miini = 0
 
 for i in num:
     sum += i
@@ -32,7 +32,7 @@ for i in num:
     f1.write(str(i) + ' ')
 f1.write('\n')
 f1.write('Количество элементов:\n')
-f1.write(str(xuila))
+f1.write(str(dlina))
 f1.write('\n')
 f1.write('Сумма элементов:\n')
 f1.write(str(sum))
