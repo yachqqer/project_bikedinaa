@@ -23,8 +23,8 @@ miini = 0
 
 for i in num:
     sum += i
-    fuck = min1 * i
-    ogo.append(fuck)
+    miini = min1 * i
+    ogo.append(miini)
 
 f1 = open('text1.txt', 'w', encoding='UTF-8')
 f1.write('Исходные данные:\n')
